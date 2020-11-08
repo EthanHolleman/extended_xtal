@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "definitions": {
+    "classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["class", "classifier"]
+      "properties": {
+        "class":{
+          "type": "string",
+          "description": "Description of the classification"
+        },
+        "classifier": {
+          "type": "string",
+          "description": "Entity that made the classification.",
+          "default": "human",
+          "examples": ["human", "machine", "MARCO"]
+        },
+        "confidence":{
+          "type": "number",
+          "description": "Number quantifying classification confidence."
+        },
+        "extra":{
+          "type":"string",
+          "description": "Any extra data to include."
+        }
+      }
+    }
+  }
+}

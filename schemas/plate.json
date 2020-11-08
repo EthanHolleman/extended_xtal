@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "definitions": {
+    "plate": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties":{
+        "name": {
+          "type": "string",
+          "description": "Name of plate, may or may not be unique."
+        },
+        "plate_id":{
+          "type": "number",
+          "description": "Number that uniquely identifies this plate"
+        },
+        "wells":{
+          "type": "array",
+          "items": {"$ref": "well.json$definitions/well"},
+          "description": "Array of all wells in this plate."
+        },
+        "notes":{
+          "type": "string",
+          "description": "Notes on this well. Should be journal like entries not used for arbitrary data storage."
+        },
+        "sample":{
+          "type": {"$ref": "sample.json$definitions/sample"},
+          "description": "Sample being crystalized in this plate."
+        },
+        "temperature":{
+          "type": "number",
+          "description": "Temperature in Celcuius the crystalization was conducted at."
+        },
+        "number_wells":{
+          "type": "int",
+          "description": "Number of wells in the plate."
+        },
+      }
+    }
+
+  }
+}

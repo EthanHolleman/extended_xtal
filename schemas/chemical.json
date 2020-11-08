@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "definitions": {
+    "compound": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "required": ["compound_id", "name"],
+        "compound_id": {
+          "type": "number",
+          "description": "ID of the compound"
+        },
+        "name": {
+          "type": "string",
+          "description": "name of the compound"
+        },
+        "chemspider_id": {
+          "type": "number",
+          "description": "The chemspider ID"
+        },
+        "pubchem_id": {
+          "type": "number",
+          "description": "The PubChem ID"
+        },
+        "iupac": {
+          "type": "string"
+        },
+        "cas": {
+          "type": "string"
+        },
+        "formula": {
+          "type": "string"
+        },
+        "smiles": {
+          "type": "string"
+        },
+        "inchi": {
+          "type": "string"
+        },
+        "inchi_key": {
+          "type": "string"
+        },
+        "common_name": {
+          "type": "string"
+        },
+        "average_mass": {
+          "type": "number"
+        },
+        "molecular_weight": {
+          "type": "number"
+        },
+        "monoisotopic_mass": {
+          "type": "number"
+        },
+        "nominal_mass": {
+          "type": "number"
+        },
+        "density": {
+          "type": "number"
+        }
+      }
+    }
+    }
+  }

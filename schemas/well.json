@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "well": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "well_number":{
+          "type": "number",
+          "description": "Position or id number of the well in a larger experiment",
+        },
+        "name":{
+          "type": "string",
+          "description": "Name to assocaite with the well."
+        },
+        "records": {
+          "type": "array",
+          "items": {"$ref": "record.json$definitions/record"},
+          "description": "Array of records (observations) of this well."
+        },
+        "extra": {
+          "type": "string",
+          "description": "Any extra data to include with the well."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Notes on this well. Should be journal like entries not used for arbitrary data storage."
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+{
+  "$id": "well.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Well",
+  "description": "Describes contents and crystalization results of a well, potentially over time",
+  "required": [ "latitude", "longitude" ],
+  "type": "object",
+  "properties": {
+    "cocktail":{
+      "description": "Cocktail used in the well.",
+      "$ref": "cocktail.json"
+    },
+    "records":{
+      "description": "Array of observations of this well at particular points in time.",
+      "type": "array",
+      "items": {
+
+      }
+
+    }
+
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "definitions": {
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["data", "encoding"],
+      "properties": {
+        "data": {
+          "type": "string",
+          "description": "Image data encoded as a string."
+        },
+        "encoding":{
+          "type": "string",
+          "description": "Image encoding method",
+          "enum": ["base32", "base64"]
+        },
+        "modality":{
+          "type": "string",
+          "description": "Photographic technique used to capture the image",
+          "default": "visible"
+        },
+        "md5":{
+          "type": "string",
+          "description": "MD5 checksum for image data string"
+        },
+        "corrupt":{
+          "type":"bool",
+          "description": "Whether or not the md5 matches the image data."
+        }
+      }
+    }
+  }
+}
