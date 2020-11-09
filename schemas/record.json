@@ -12,10 +12,10 @@
           "description": "datetime string describing time of record."
         },
         "image": {
-          "type": "image.json#definitions/image",
+          "$ref": "image.json#/definitions/image"
         },
         "classification": {
-          "type": "classification.json#definitions/classification"
+          "$ref": "classification.json#/definitions/classification"
         },
         "extra": {
           "type": "string",

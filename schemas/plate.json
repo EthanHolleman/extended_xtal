@@ -17,7 +17,7 @@
         },
         "wells":{
           "type": "array",
-          "items": {"$ref": "well.json$definitions/well"},
+          "items": {"$ref": "well.json#/definitions/well"},
           "description": "Array of all wells in this plate."
         },
         "notes":{
@@ -25,19 +25,17 @@
           "description": "Notes on this well. Should be journal like entries not used for arbitrary data storage."
         },
         "sample":{
-          "type": {"$ref": "sample.json$definitions/sample"},
-          "description": "Sample being crystalized in this plate."
+          "$ref": "sample.json#/definitions/sample"}
         },
         "temperature":{
           "type": "number",
           "description": "Temperature in Celcuius the crystalization was conducted at."
         },
         "number_wells":{
-          "type": "int",
+          "type": "integer",
           "description": "Number of wells in the plate."
-        },
+        }
       }
     }
 
   }
-}

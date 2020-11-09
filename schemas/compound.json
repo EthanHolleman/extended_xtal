@@ -6,8 +6,11 @@
     "compound": {
       "type": "object",
       "additionalProperties": false,
+      "required": [
+        "compound_id",
+        "name"
+      ],
       "properties": {
-        "required": ["compound_id", "name"],
         "compound_id": {
           "type": "number",
           "description": "ID of the compound"
@@ -62,5 +65,5 @@
         }
       }
     }
-    }
   }
+}

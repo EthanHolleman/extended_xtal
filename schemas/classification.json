@@ -5,8 +5,8 @@
   "definitions": {
     "classification": {
       "type": "object",
+      "required": ["class", "classifier"],
       "additionalProperties": false,
-      "required": ["class", "classifier"]
       "properties": {
         "class":{
           "type": "string",
