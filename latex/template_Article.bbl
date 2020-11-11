@@ -1,0 +1,16 @@
+\begin{thebibliography}{1}
+
+\bibitem{pmid875032}
+F.~C. Bernstein, T.~F. Koetzle, G.~J. Williams, E.~F. Meyer, M.~D. Brice, J.~R.
+  Rodgers, O.~Kennard, T.~Shimanouchi, and M.~Tasumi.
+\newblock {{T}he {P}rotein {D}ata {B}ank: a computer-based archival file for
+  macromolecular structures}.
+\newblock {\em J Mol Biol}, 112(3):535--542, May 1977.
+
+\bibitem{Hall:es0164}
+S.~R. Hall, F.~H. Allen, and I.~D. Brown.
+\newblock {The crystallographic information file (CIF): a new standard archive
+  file for crystallography}.
+\newblock {\em Acta Crystallographica Section A}, 47(6):655--685, Nov 1991.
+
+\end{thebibliography}
