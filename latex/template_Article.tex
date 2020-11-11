@@ -59,6 +59,25 @@ Before the French Revolution, there were an estimated 250,000 different units of
 
 \subsection{Approaches}
 
+I believe there are two primary needs that need to be balanced, data density and human-readability. High-throughput enters will prefer the former while low-throughput users will likely prefer the later. For this reason it seems that having a "rossetta stone" intermediate format would be useful. While itself may not be used commonly in applications its consistent formating would allow easy conversion to more specialized filetypes. 
+
+\subsection{Exchange Format}
+
+\subsection{Maximizing-Readability}
+
+Low-throughput users will likely not require the data density of binary, optimized and compressed file formats and will value being able to easily view their results in an accessible manor. A potential solution for this is HTML. HTML xtal files could include JavaScript that allow a single file to provide an interface similar to a graphical application while at the same time retaining a consistent and machine parasable structure which would be amenable to creation from and reversion to the standard exchange format. 
+
+\subsection{Maximizing Density}
+
+In highthroughput settings, the volume and frequency of crystlization experiments makes the size of data much more of a factor than in a small scale setting. It would therefore be benefical for medium to high throughput users to have access to a format that minimizes memory at the cost of human readability. This format would be more invovled to parse but maximize memory efficiency. 
+
+\section{Making Standardization a Reality}
+
+Things that will be needed
+
+\begin{itemize}
+	\item Software (ideally online) for CRUD operations on existing file formats and for converting between files. This should be focused on low-throughput users as as throughput increases the compitation ability we can expect from the users increases as well. 
+\end{itemize}
 
 \bibliographystyle{plain}
 \bibliography{reference}
